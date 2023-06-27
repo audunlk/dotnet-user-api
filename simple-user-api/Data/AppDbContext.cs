@@ -13,21 +13,20 @@ namespace simple_user_api.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Configure the User entity and its properties
             modelBuilder.Entity<User>(entity =>
             {
 
                 entity.ToTable("users");
 
-                entity.HasKey(e => e.Id); // Set the primary key
+                entity.HasKey(e => e.Id);
 
                 entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasMaxLength(100); // Set the max length for the Name property
+                    .HasMaxLength(100); 
 
                 entity.Property(e => e.Email)
                     .IsRequired()
-                    .HasMaxLength(100); // Set the max length for the Email property
+                    .HasMaxLength(100); 
             });
         }
     }

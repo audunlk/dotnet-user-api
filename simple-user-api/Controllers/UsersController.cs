@@ -2,9 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using simple_user_api.Data;
 using simple_user_api.Models;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace YourProject.Controllers
 {
